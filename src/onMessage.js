@@ -12,10 +12,11 @@ const admins = {
 const onMessage = async (msg, bot) => {
     const text = msg.text;
     const chatId = msg.chat.id;
+    const migrateFromChatId = msg.migrate_from_chat_id;
     const userId = msg.from.id;
     const messageId = msg.message_id;
 
-    if(chatId === group) return;
+    if(chatId === group || migrateFromChatId === group) return;
     // console.log({msg});
     if(text === "/start") {
         await bot.sendMessage(chatId, startMessage);
