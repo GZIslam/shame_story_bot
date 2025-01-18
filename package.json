@@ -10,7 +10,8 @@
   "author": "Islam Gaibullaev",
   "license": "ISC",
   "dependencies": {
-    "node-telegram-bot-api": "^0.66.0"
+    "node-telegram-bot-api": "^0.66.0",
+    "request": "^2.88.2"
   },
   "devDependencies": {
     "dotenv": "^16.4.7"
