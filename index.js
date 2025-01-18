@@ -5,7 +5,7 @@ const onMessage = require("./src/onMessage");
 const commands = require("./src/commands");
 
 const launchBot = () => {
-    const bot = new TelegramBot(bot_token, {polling: true});
+    const bot = new TelegramBot(bot_token, { polling: true });
     bot.setMyCommands(commands);
 
     bot.on("message", async (msg) => {
