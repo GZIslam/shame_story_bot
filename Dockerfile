@@ -1,4 +1,4 @@
-FROM node:12.13-alpine
+FROM node:22-alpine
 
 WORKDIR /app
 
@@ -8,5 +8,4 @@ RUN npm install
 COPY .env* ./
 COPY index.js ./
 
-CMD ["npm", "install", "request" "--save"]
 CMD ["npm", "run", "start"]
