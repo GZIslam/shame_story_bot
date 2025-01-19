@@ -36,4 +36,4 @@ const onMessage = async (msg, bot) => {
     }
 };
 
-module.exports = onMessage
+module.exports = onMessage;
